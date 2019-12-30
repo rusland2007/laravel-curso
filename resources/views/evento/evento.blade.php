@@ -35,11 +35,13 @@
 
     <div class="container">
       <div style="height:50px"></div>
-      <h1>< tutofox /> <small>Oh my code!</small></h1>
+      
       <p class="lead">
-      <h3>Evento</h3>
-      <p>Detalles de evento</p>
-      <a class="btn btn-default"  href="{{ asset('/Evento/index') }}">Atras</a>
+      <h3>Horario</h3>
+      <p>Detalles de Horario</p>
+      <a class="btn btn-default btn-danger"  href="{{ asset('/Evento/index') }}">
+            <i class="fas fa-chevron-circle-left"></i> Atras
+          </a>
       <hr>
 
 
@@ -51,7 +53,7 @@
             {{ $event->titulo }}
           </div>
           <div class="fomr-group">
-            <h4>Descripcion del Evento</h4>
+            <h4>Descripcion del Horario</h4>
             {{ $event->descripcion }}
           </div>
           <div class="fomr-group">

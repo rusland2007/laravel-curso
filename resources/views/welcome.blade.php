@@ -68,12 +68,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel + Calendario + Evento
+                    Laravel + Calendario + Horarios
                 </div>
 
                 <div class="links">
-                    <a href="{{ asset('/Calendar/event/') }}">Calendario</a>
-                    <a href="{{ asset('/Evento/index/') }}">Evento</a>
+                    <!-- <a href="{{ asset('/Calendar/event/') }}">Calendario</a> -->
+                    <a href="{{ asset('/Evento/index/') }}">Horario</a>
                 </div>
             </div>
         </div>
