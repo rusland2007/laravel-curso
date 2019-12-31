@@ -38,3 +38,6 @@ Route::get('Evento/index/{month}','ControllerEvent@index_month');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/alumnos', 'AlumnoController');
+

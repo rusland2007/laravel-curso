@@ -28,7 +28,7 @@ class CreateAlumnosTable extends Migration
             $table->integer('numero_telefonico_alumno');
 
             $table->string('correo_alumno', 70);
-            $table->int('estado_alumno');
+            $table->integer('estado_alumno');
             $table->string('key_alumno', 70);
             $table->timestamps();
         });

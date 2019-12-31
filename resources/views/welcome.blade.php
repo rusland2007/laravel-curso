@@ -1,13 +1,22 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+<!-- CSRF Token -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+<title>{{ config('app.name', 'Laravel') }}</title>
+
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
+
+<!-- Fonts -->
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+<!-- Styles -->
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -63,10 +72,12 @@
             }
         </style>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
+    <body >
+        <div id="app" class="flex-center position-ref full-height">
 
             <div class="content">
+                <usuario-form></usuario-form>
+
                 <div class="title m-b-md">
                     Laravel + Calendario + Horarios
                 </div>
@@ -75,6 +86,11 @@
                     <!-- <a href="{{ asset('/Calendar/event/') }}">Calendario</a> -->
                     <a href="{{ asset('/Evento/index/') }}">Horario</a>
                 </div>
+
+                
+                
+
+
             </div>
         </div>
     </body>
