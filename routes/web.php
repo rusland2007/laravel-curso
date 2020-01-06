@@ -39,5 +39,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('/alumnos', 'AlumnoController');
+Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/alumnos', 'AlumnoController');
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++
+// areas
+Route::resource('/areas', 'AreaController');
+
+Route::resource('/roles', 'RolController');
